@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #fff3ca;
+  --main-color: #254a35;
+  --text-color: #fef8e2;
+}
+body {
+  font-family: sans-serif;
+  color: var(--main-color);
+  background-color: var(--bg-color);
+}
+section .container {
+  gap: 80px;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+section .container .count {
+  font-size: 65px;
+  font-weight: 600;
+  padding: 0 150px;
+  text-align: center;
+  border-radius: 5px;
+  transform: scale(1.2);
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 991px) {
+  section .container .count {
+    padding: 0 110px;
+  }
+}
+section .container .action {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+section .container .action .increment-count {
+  border: 0;
+  width: 300px;
+  height: 300px;
+  font-size: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--main-color);
+}
+section .container .action .increment-count:active {
+  width: 288px;
+  height: 288px;
+}
+section .container .action .rest-count {
+  border: 0;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  right: -13px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  color: var(--text-color);
+  background-color: rgb(176, 0, 0);
+}
+section .container .action .rest-count:active {
+  width: 46px;
+  height: 46px;
+}
